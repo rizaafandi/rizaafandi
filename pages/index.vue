@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { useHead } from "@vueuse/head";
-import Scrollbar from "./components/Scrollbar.vue";
-import Link from "./components/Link.vue";
-
 useHead({
   title: "Riza Afandi",
   meta: [
@@ -20,13 +16,11 @@ useHead({
 
 <template>
   <div
-    class="w-full h-screen flex flex-col justify-center items-center bg-white dark:bg-slate-950 text-slate-500 dark:text-slate-300 font-mono selection:bg-green-300 dark:selection:bg-green-600"
+    class="w-5/6 md:w-4/5 lg:w-3/5 text-left text-xl lg:text-2xl flex flex-col gap-16"
   >
-    <Scrollbar />
-
-    <div class="w-5/6 md:w-4/5 lg:w-3/5 text-left text-xl lg:text-3xl">
+    <div>
       <p>Hello👋🏻</p>
-      <p class="text-3xl md:text-5xl lg:text-7xl">
+      <p class="text-5xl md:text-7xl lg:text-8xl heading-eczar">
         I'm
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r font-bold dark:font-normal from-blue-700 to-green-400 dark:from-purple-600 dark:to-yellow-600 selection:bg-yellow-200 selection:text-white dark:selection:bg-white dark:selection:text-yellow-600"
@@ -36,8 +30,15 @@ useHead({
       </p>
       <hr class="border-slate-500" />
       <p>I'm a Fullstack Web Developer</p>
+    </div>
+    <div class="flex flex-col gap-8">
+      <p>
+        I'm a Self-taught, dedicated Web Developer with 3+ years of experience
+        with a proven track record in creating web applications. Have built and
+        maintained some projects and delivered as production products
+      </p>
 
-      <Link />
+      <Links />
     </div>
   </div>
 </template>
