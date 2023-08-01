@@ -2,7 +2,7 @@
   <div class="lg:px-56 px-10 w-full fixed top-3 flex justify-end">
     <div
       @click="colorSwitch"
-      class="cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 rounded-full p-2"
+      class="cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 rounded-full p-2 active:border-outsite"
     >
       <Icon :icon="colorIcon" class="text-4xl" />
     </div>
