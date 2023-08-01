@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <p class="lg:text-2xl">Let's Connect</p>
-    <div class="flex flex-row gap-3 text-2xl">
+  <div class="flex flex-row gap-3 items-center">
+    <div class="flex flex-row gap-2 text-2xl">
       <div
         @click="openLink('github')"
         class="cursor-pointer p-2 hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 rounded-full"
@@ -27,6 +26,8 @@
         <Icon icon="mdi:medium" />
       </div>
     </div>
+    <span>|</span>
+    <div class="capitalize">made with ❤️</div>
   </div>
 </template>
 
