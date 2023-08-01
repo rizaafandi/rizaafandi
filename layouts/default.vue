@@ -8,6 +8,6 @@
 
     <slot />
 
-    <Links class="absolute lg:bottom-3 bottom-1" />
+    <Links class="absolute lg:bottom-3 bottom-0" />
   </div>
 </template>
