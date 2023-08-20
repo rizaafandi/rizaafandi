@@ -13,7 +13,7 @@
       <Icon icon="mdi:linkedin" />
     </div>
     <div
-      @click="downloadResume"
+      @click="openLink('cv')"
       class="cursor-pointer p-2 hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 rounded-full"
     >
       <Icon icon="mdi:file-pdf-box" />
@@ -33,13 +33,10 @@ const links: linkType = {
   mail: "mailto:rizaaffandi45@gmail.com",
   linkedIn: "https://linkedin.com/in/rizaafandi",
   medium: "https://rizaafandi.medium.com",
+  cv: "https://bit.ly/3OLwNHk",
 };
 
 const openLink = (type: string) => {
   window.open(links[type]);
-};
-
-const downloadResume = () => {
-  window.open("/assets/pdf/resume.pdf");
 };
 </script>
