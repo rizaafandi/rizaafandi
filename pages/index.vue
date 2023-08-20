@@ -21,7 +21,7 @@ useHead({
       <p class="text-5xl md:text-7xl lg:text-8xl heading">
         I'm
         <span
-          class="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-purple-600 dark:to-yellow-600"
+          class="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-purple-600 dark:to-yellow-600 whitespace-nowrap"
         >
           Riza Afandi
         </span>
