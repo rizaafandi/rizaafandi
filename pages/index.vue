@@ -18,7 +18,7 @@ useHead({
   <div class="w-full text-left text-xl gap-24 flex flex-col">
     <div class="gap-3 flex flex-col">
       <p>Hello👋🏻</p>
-      <p class="text-5xl md:text-7xl lg:text-8xl heading">
+      <p class="text-5xl md:text-7xl lg:text-8xl heading whitespace-nowrap">
         I'm
         <span
           class="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-purple-600 dark:to-yellow-600 whitespace-nowrap"
