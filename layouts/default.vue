@@ -7,7 +7,5 @@
     <ThemeSwitch />
 
     <slot />
-
-    <Links class="fixed lg:bottom-3 bottom-0" />
   </div>
 </template>
