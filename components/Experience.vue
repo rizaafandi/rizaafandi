@@ -8,10 +8,12 @@
         {{ data.year }}
       </p>
       <div class="flex flex-col">
-        <p class="prosed prose-lg highlight font-bold flex flex-row gap-1">
-          {{ data.job }} •
+        <p
+          class="prosed prose-lg highlight font-bold flex lg:flex-row flex-col gap-1"
+        >
+          <span>{{ data.job }} •</span>
           <span
-            class="flex flex-row items-center gap-1 hover:underline"
+            class="flex flex-row items-center gap-1 hover:underline whitespace-nowrap"
             @click="openLink(data.link)"
           >
             {{ data.company }} <Icon icon="mdi:arrow-top-right" />

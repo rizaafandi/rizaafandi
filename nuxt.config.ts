@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
+    "nuxt-vercel-analytics",
   ],
   css: ["~/assets/css/global.css"],
   colorMode: {
@@ -22,5 +23,14 @@ export default defineNuxtConfig({
     preconnect: true,
     preload: true,
     useStylesheet: true,
+  },
+  vercelAnalytics: {
+    mode: "auto",
+    debug: true,
+    beforeSend: (event) => {
+      if (event.url.includes("/private")) return null;
+
+      return event;
+    },
   },
 });
