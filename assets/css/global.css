@@ -1,6 +1,7 @@
 html {
   user-select: none !important;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 .heading {

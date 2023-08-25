@@ -8,6 +8,8 @@
     <ThemeSwitch />
 
     <slot />
+
+    <ScrollToTop />
   </div>
 </template>
 
