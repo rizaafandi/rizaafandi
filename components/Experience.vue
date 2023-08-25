@@ -1,5 +1,8 @@
 <template>
   <div class="my-40 flex flex-col gap-10">
+    <div class="prosed">
+      <h1 class="dark:text-slate-500 block lg:hidden">Experiences</h1>
+    </div>
     <div
       v-for="data in props.experiences"
       class="flex lg:flex-row flex-col lg:gap-10 lg:hover:dark:bg-slate-900 lg:hover:bg-slate-100 cursor-pointer lg:hover:transition-all rounded-md lg:p-5"

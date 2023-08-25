@@ -1,6 +1,7 @@
 <template>
-  <div class="flex flex-col gap-5 w-full">
-    <div class="prosed dark:text-slate-500">
+  <div class="flex flex-col gap-5 w-full prosed">
+    <h1 class="dark:text-slate-500 block lg:hidden">Summary</h1>
+    <div class="dark:text-slate-500">
       <span class="highlight">I'm a Full-stack Developer</span> with proven
       track record of designing and implementing innovative web applications
       that seamlessly integrate user-centric design with robust functionality.
@@ -8,7 +9,7 @@
       successfully <span class="highlight">delivered some projects</span> that
       enhance user experiences while optimizing performance and scalability
     </div>
-    <p class="prosed dark:text-slate-500">
+    <p class="dark:text-slate-500">
       With strong foundations in
       <span class="highlight">
         JavaScript, HTML, CSS and frameworks such as Vue.js, React.js and
