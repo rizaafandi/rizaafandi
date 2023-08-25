@@ -1,3 +1,22 @@
+<template>
+  <div
+    class="flex flex-col lg:flex-row lg:gap-24 gap-10 lg:px-56 px-10 min-h-screen"
+  >
+    <div
+      class="lg:w-1/2 w-full flex flex-col lg:justify-between justify-center gap-36 lg:sticky lg:top-1 lg:py-24 py-20 lg:max-h-screen min-h-screen"
+    >
+      <Heading />
+      <div class="flex flex-row gap-4 items-center relative">
+        <ReachMe />
+        <Links v-if="!contactPending" :contact="contact" />
+      </div>
+    </div>
+    <div class="lg:w-1/2 w-full flex flex-col lg:py-24">
+      <Summary class="py-10 lg:px-5" />
+      <Experience :experiences="experience" v-if="!expPending" />
+    </div>
+  </div>
+</template>
 <script setup lang="ts">
 useHead({
   title: "Riza Afandi",
@@ -12,35 +31,7 @@ useHead({
     },
   ],
 });
-</script>
 
-<template>
-  <div class="w-full text-left text-xl gap-24 flex flex-col">
-    <div class="gap-3 flex flex-col">
-      <p>Hello👋🏻</p>
-      <p class="text-5xl md:text-7xl lg:text-8xl heading whitespace-nowrap">
-        I'm
-        <span
-          class="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-purple-600 dark:to-yellow-600 whitespace-nowrap"
-        >
-          Riza Afandi
-        </span>
-      </p>
-      <p class="lg:pr-[20%]">
-        <b>I'm a Self-taught, dedicated Full-stack Developer</b> with a proven
-        track record in creating web applications. Passionate about learning and
-        collaborating, let's connect!.
-      </p>
-    </div>
-    <div class="flex flex-row gap-4 items-center relative">
-      <div>
-        <a
-          href="mailto:rizaaffandi45@gmail.com"
-          class="bordered relative z-10 bg-white dark:bg-slate-950 before:absolute before:-z-10 before:top-1 before:left-1 before:w-full before:h-full dark:hover:before:bg-gradient-to-r dark:hover:before:from-purple-600 dark:hover:before:to-yellow-600"
-          >Reach Me</a
-        >
-      </div>
-      <Links />
-    </div>
-  </div>
-</template>
+const { data: contact, pending: contactPending } = useFetch("/api/contact");
+const { data: experience, pending: expPending } = useFetch("/api/experience");
+</script>

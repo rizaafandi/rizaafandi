@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 const color = useColorMode();
-const colorList = ["dark", "light", "system"];
+const colorList = ["dark", "light"];
 const colorIndex = ref(0);
 const colorSwitch = () => {
   color.preference = colorList[colorIndex.value];

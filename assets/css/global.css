@@ -1,25 +1,20 @@
-@font-face {
-  font-family: "Lato";
-  src: url(../fonts/Lato-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Eczar";
-  src: url(../fonts/Eczar.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Medium.ttf) format("truetype");
-}
-body {
-  font-family: "Lato";
+html {
   user-select: none !important;
   -webkit-tap-highlight-color: transparent;
 }
 
 .heading {
-  font-family: "Poppins";
+  font-family: "Inter";
+  font-weight: bold;
 }
 
+.prosed {
+  @apply prose prose-slate dark:text-slate-500 text-lg max-w-max;
+}
+
+.highlight {
+  @apply dark:text-slate-300;
+}
 .bordered {
   @apply py-2 px-3 border border-slate-500 dark:border-slate-300;
 }

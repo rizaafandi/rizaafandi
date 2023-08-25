@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-0.5 dark:bg-slate-300 bg-slate-900 fixed top-0">
+  <div class="w-full h-1 dark:bg-slate-300 bg-slate-900 fixed top-0 z-10">
     <div
       ref="scrollBarRef"
-      class="w-0 h-0.5 bg-gradient-to-r font-bold dark:font-normal from-blue-700 to-green-400 dark:from-purple-600 dark:to-yellow-600"
+      class="w-0 h-1 bg-gradient-to-r font-bold dark:font-normal from-blue-700 to-green-400 dark:from-purple-600 dark:to-yellow-600"
     ></div>
   </div>
 </template>
