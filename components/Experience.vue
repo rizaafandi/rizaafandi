@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-type propType = {
+export type propType = {
   year: string;
   job: string;
   company: string;

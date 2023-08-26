@@ -8,13 +8,16 @@
       <Heading />
       <div class="flex flex-row gap-4 items-center relative">
         <ReachMe />
-        <Links v-if="!contactPending" :contact="contact" />
+        <Contact
+          v-if="!contactPending"
+          :contact="(contact as unknown as contactType[])"
+        />
       </div>
     </div>
     <div class="lg:w-1/2 w-full flex flex-col lg:py-24">
       <Summary class="py-10 lg:px-5 snap-center" />
       <Experience
-        :experiences="experience"
+        :experiences="(experience as unknown as experienceType[])"
         v-if="!expPending"
         class="snap-center"
       />
@@ -22,6 +25,8 @@
   </div>
 </template>
 <script setup lang="ts">
+import { type propType as contactType } from "~/components/Contact.vue";
+import { type propType as experienceType } from "~/components/Experience.vue";
 useHead({
   title: "Riza Afandi",
   meta: [
@@ -35,7 +40,12 @@ useHead({
     },
   ],
 });
-
-const { data: contact, pending: contactPending } = useFetch("/api/contact");
-const { data: experience, pending: expPending } = useFetch("/api/experience");
+const { data: contact, pending: contactPending } = await useAsyncData(
+  "contact",
+  () => queryContent("/contacts").find()
+);
+const { data: experience, pending: expPending } = await useAsyncData(
+  "experience",
+  () => queryContent("/experiences").find()
+);
 </script>

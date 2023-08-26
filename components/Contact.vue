@@ -19,7 +19,7 @@ const openLink = (link: string) => {
   window.open(link);
 };
 
-interface contactType {
+export interface propType {
   type: string;
   link: string;
   icon: string;
@@ -27,6 +27,6 @@ interface contactType {
 }
 
 const props = defineProps<{
-  contact: contactType[] | null;
+  contact: propType[] | null;
 }>();
 </script>

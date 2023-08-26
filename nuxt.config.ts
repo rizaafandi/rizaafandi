@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "nuxt-vercel-analytics",
+    "@nuxt/content",
   ],
   css: ["~/assets/css/global.css"],
   colorMode: {
