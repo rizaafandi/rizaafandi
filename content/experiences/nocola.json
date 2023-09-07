@@ -4,15 +4,28 @@
   "company": "Nocola IoT Solution",
   "description": "Develop products, company's web applications and delivered to users in Indonesian power industry company. Build internal services to bridges company's web applications needs such as web services, Restful API, and etc.",
   "tags": [
-    "ASP.NET",
-    "Vue.js",
-    "React.js",
-    "Ms. SQL Server",
-    "MySQL",
-    "WebSocket",
-    "Tailwind",
-    "PHP",
-    "Redux Saga"
+    {
+      "name": "ASP.NET",
+      "link": "https://dotnet.microsoft.com/en-us/apps/aspnet"
+    },
+    { "name": "Vue.js", "link": "https://vuejs.org/" },
+    { "name": "React.js", "link": "https://react.dev/" },
+    {
+      "name": "Ms. SQL Server",
+      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
+    },
+    { "name": "MySQL", "link": "https://www.mysql.com/" },
+    {
+      "name": "WebSocket",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+    },
+    { "name": "Tailwind", "link": "https://tailwindcss.com/" },
+    {
+      "name": "Bootstrap",
+      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
+    },
+    { "name": "PHP", "link": "https://www.php.net/" },
+    { "name": "Redux Saga", "link": "https://redux-saga.js.org/" }
   ],
   "link": "https://nocola.co.id/"
 }

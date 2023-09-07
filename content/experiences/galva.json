@@ -4,12 +4,24 @@
   "company": "Galva Galindra Multi Cipta",
   "description": "Contributing on company's application migration and develop web application based on Functional Specification Design (FSD), creating RESTful API, make a test, and conduct user training program.",
   "tags": [
-    "ASP.NET",
-    "Vue.js",
-    "JavaScript",
-    "Ms. SQL Server",
-    "Bootstrap",
-    "Dev Express"
+    {
+      "name": "ASP.NET",
+      "link": "https://dotnet.microsoft.com/en-us/apps/aspnet"
+    },
+    { "name": "Vue.js", "link": "https://vuejs.org/" },
+    {
+      "name": "JavaScript",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "Ms. SQL Server",
+      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
+    },
+    {
+      "name": "Bootstrap",
+      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
+    },
+    { "name": "Dev Express", "link": "https://www.devexpress.com/" }
   ],
   "link": "http://gtc.co.id/"
 }

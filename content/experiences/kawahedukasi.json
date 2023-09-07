@@ -3,6 +3,15 @@
   "job": "Front-end Developer Internship",
   "company": "Kawah Edukasi",
   "description": "Develop educational website to provide online coding bootcamp, substituting frontend development internship mentor in daily scrum meeting for a month",
-  "tags": ["React.js", "Redux Saga", "Reactstrap", "Figma", "Postman"],
+  "tags": [
+    { "name": "React.js", "link": "https://react.dev/" },
+    { "name": "Redux Saga", "link": "https://redux-saga.js.org/" },
+    { "name": "Reactstrap", "link": "https://reactstrap.github.io/" },
+    {
+      "name": "Figma",
+      "link": "https://www.figma.com/files/recents-and-sharing?fuid=913685624593636169"
+    },
+    { "name": "Postman", "link": "https://www.postman.com/" }
+  ],
   "link": "http://kawahedukasi.id/"
 }

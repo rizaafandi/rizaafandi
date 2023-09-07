@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-5 w-full prosed">
-    <h1 class="dark:text-slate-500 block lg:hidden">Summary</h1>
+    <h1 class="dark:text-slate-500">Summary</h1>
     <div class="dark:text-slate-500">
       <span class="highlight">I'm a Full-stack Developer</span> with proven
       track record of designing and implementing innovative web applications

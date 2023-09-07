@@ -1,11 +1,11 @@
 <template>
   <div class="my-40 flex flex-col gap-10">
     <div class="prosed">
-      <h1 class="dark:text-slate-500 block lg:hidden">Experiences</h1>
+      <h1 class="dark:text-slate-500">Experiences</h1>
     </div>
     <div
       v-for="data in props.experiences"
-      class="flex lg:flex-row flex-col lg:gap-10 lg:hover:dark:bg-slate-900 lg:hover:bg-slate-100 cursor-pointer lg:hover:transition-all rounded-md lg:p-5"
+      class="flex lg:flex-row flex-col lg:gap-10 mb-10 lg:mb-0 lg:hover:dark:bg-slate-900 lg:hover:bg-slate-100 cursor-pointer lg:hover:transition-all lg:rounded-md lg:border-0 lg:p-5"
     >
       <p class="capitalize prosed whitespace-nowrap min-w-[20%]">
         {{ data.year }}
@@ -28,9 +28,10 @@
         <div class="flex flex-row mt-5 flex-wrap gap-2">
           <span
             v-for="tag in data.tags"
-            class="px-3 py-1 rounded-full bg-blue-100 text-blue-400 dark:bg-blue-500 dark:bg-opacity-30 dark:text-blue-300"
+            class="px-3 py-1 rounded-full bg-blue-100 text-blue-400 dark:bg-blue-500 dark:bg-opacity-30 dark:text-blue-300 hover:underline"
+            @click="openLink(tag.link)"
           >
-            {{ tag }}
+            {{ tag.name }}
           </span>
         </div>
       </div>
@@ -40,12 +41,16 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+type tagType = {
+  name: string;
+  link: string;
+};
 export type propType = {
   year: string;
   job: string;
   company: string;
   description: string;
-  tags: string[];
+  tags: tagType[];
   link: string;
 };
 const props = defineProps<{
