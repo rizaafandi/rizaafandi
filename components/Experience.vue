@@ -7,9 +7,11 @@
       v-for="data in props.experiences"
       class="flex lg:flex-row flex-col lg:gap-10 mb-10 lg:mb-0 lg:hover:dark:bg-slate-900 lg:hover:bg-slate-100 cursor-pointer lg:hover:transition-all lg:rounded-md lg:border-0 lg:p-5"
     >
-      <p class="capitalize prosed whitespace-nowrap min-w-[20%]">
+      <small
+        class="capitalize prosed whitespace-nowrap min-w-[20%] prose prose-a"
+      >
         {{ data.year }}
-      </p>
+      </small>
       <div class="flex flex-col">
         <p
           class="prosed prose-lg highlight font-bold flex lg:flex-row flex-col gap-1"
@@ -19,20 +21,20 @@
             class="flex flex-row items-center gap-1 hover:underline whitespace-nowrap"
             @click="openLink(data.link)"
           >
-            {{ data.company }} <Icon icon="mdi:arrow-top-right" />
+            {{ data.company }} <UIcon name="i-mdi-arrow-top-right" />
           </span>
         </p>
         <p class="prosed mt-5 lg:mt-0">
           {{ data.description }}
         </p>
         <div class="flex flex-row mt-5 flex-wrap gap-2">
-          <span
+          <UBadge
             v-for="tag in data.tags"
-            class="px-3 py-1 rounded-full bg-blue-100 text-blue-400 dark:bg-blue-500 dark:bg-opacity-30 dark:text-blue-300 hover:underline"
-            @click="openLink(tag.link)"
-          >
-            {{ tag.name }}
-          </span>
+            :label="tag.name"
+            class="px-3 py-1 hover:underline"
+            variant="soft"
+            color="blue"
+          />
         </div>
       </div>
     </div>
@@ -40,7 +42,6 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 type tagType = {
   name: string;
   link: string;

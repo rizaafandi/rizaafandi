@@ -1,19 +1,50 @@
 <template>
   <div class="flex flex-row gap-2 text-2xl">
-    <div
+    <UButton
       v-for="c in props.contact"
-      :key="c.type"
       @click="openLink(c.type, c.link)"
-      class="cursor-pointer p-2 hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-slate-700 dark:hover:text-slate-200 rounded-full flex flex-row gap-3"
-    >
-      <Icon :icon="c.icon" />
-      <!-- <span class="prosed"> {{ c.name }} </span> -->
-    </div>
+      :icon="c.icon"
+      variant="ghost"
+      color="gray"
+      size="lg"
+    />
   </div>
+  <Teleport to="body">
+    <UModal
+      v-model="isModalOpen"
+      prevent-close
+      :ui="{
+        width: 'w-full',
+      }"
+    >
+      <UCard>
+        <template #header>
+          <div class="flex items-center justify-between">
+            <h3
+              class="text-base font-semibold leading-6 text-gray-900 dark:text-white"
+            >
+              Resume
+            </h3>
+            <UButton
+              color="gray"
+              variant="ghost"
+              icon="i-heroicons-x-mark-20-solid"
+              class="-my-1"
+              @click="isModalOpen = false"
+            />
+          </div>
+        </template>
+        <ClientOnly>
+          <vue-pdf-embed
+            :source="(props.contact?.find((x) => x.type == 'cv')?.link as string)"
+          />
+        </ClientOnly>
+      </UCard>
+    </UModal>
+  </Teleport>
 </template>
 
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 const isModalOpen = ref(false);
 const openLink = (type: string, link: string) => {
   if (type != "cv") {
@@ -36,4 +67,14 @@ export interface propType {
 const props = defineProps<{
   contact: propType[] | null;
 }>();
+
+defineShortcuts({
+  escape: {
+    usingInput: true,
+    whenever: [isModalOpen],
+    handler: () => {
+      isModalOpen.value = false;
+    },
+  },
+});
 </script>

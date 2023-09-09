@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-1 dark:bg-slate-300 bg-slate-900 fixed top-0 z-10">
+  <div class="w-full h-1 dark:bg-slate-300 bg-slate-900 fixed top-0 z-[10000]">
     <div
       ref="scrollBarRef"
       class="w-0 h-1 bg-gradient-to-r font-bold dark:font-normal from-blue-700 to-green-400 dark:from-purple-600 dark:to-yellow-600"

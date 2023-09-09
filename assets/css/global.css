@@ -1,11 +1,23 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-display: auto;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-display: auto;
+}
+
 html {
   user-select: none !important;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  font-family: "Inter";
 }
 
 .heading {
-  font-family: "Inter";
+  font-family: "Inter-Bold";
   font-weight: bold;
 }
 
