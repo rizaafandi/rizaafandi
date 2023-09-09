@@ -34,6 +34,7 @@
             class="px-3 py-1 hover:underline"
             variant="soft"
             color="blue"
+            @click="openLink(tag.link)"
           />
         </div>
       </div>
