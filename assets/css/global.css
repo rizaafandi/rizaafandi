@@ -22,12 +22,9 @@ html {
 }
 
 .prosed {
-  @apply prose prose-slate dark:text-slate-500 text-lg max-w-max;
+  @apply prose prose-gray dark:text-gray-500 text-lg max-w-max;
 }
 
-.highlight {
-  @apply dark:text-slate-300;
-}
 .bordered {
-  @apply py-2 px-3 border border-slate-500 dark:border-slate-300;
+  @apply py-2 px-3 border border-gray-500 dark:border-gray-300;
 }
