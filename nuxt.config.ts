@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
   ui: {
-    primary: "blue",
+    // primary: "blue",
     default: "blue",
     gray: "cool",
     icons: ["mdi", "heroicons"],

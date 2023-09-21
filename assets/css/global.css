@@ -21,10 +21,6 @@ html {
   font-weight: bold;
 }
 
-.prosed {
-  @apply prose prose-gray dark:text-gray-500 text-lg max-w-max;
-}
-
 .bordered {
   @apply py-2 px-3 border border-gray-500 dark:border-gray-300;
 }

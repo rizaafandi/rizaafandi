@@ -1,13 +1,13 @@
 <template>
   <div class="gap-3 flex flex-col">
-    <p class="prosed dark:!text-gray-300">Hello👋🏻</p>
+    <p class="dark:!text-gray-300">Hello👋🏻</p>
     <h1
       class="text-5xl md:text-5xl lg:text-6xl heading whitespace-nowrap dark:text-gray-200 text-gray-950"
     >
       I'm
       <span class="dark-theme"> Riza Afandi </span>
     </h1>
-    <p class="lg:pr-[20%] text-xl prosed">
+    <p class="text-xl text-gray dark:text-gray-400">
       Self-taught, dedicated Full-stack Developer
     </p>
   </div>
