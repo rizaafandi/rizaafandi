@@ -25,11 +25,9 @@
       v-if="!expPending"
     />
 
-    <div id="footer">
-      <div class="flex flex-row justify-center items-center gap-1">
-        <span class="capitalize text-center">made with</span>
-        <UIcon name="i-mdi-heart" class="text-red-500 text-xl" />
-      </div>
+    <div class="flex flex-row justify-center items-center gap-1 my-10">
+      <span class="capitalize text-center">made with</span>
+      <UIcon name="i-mdi-heart" class="text-red-500 text-xl" />
     </div>
   </div>
 </template>
