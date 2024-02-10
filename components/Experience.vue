@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-10 lg:min-h-0 min-h-screen">
+  <div class="flex flex-col gap-5 lg:min-h-0 min-h-screen">
     <Highlight>
       <h1 class="text-3xl lg:text-4xl font-bold">Experiences</h1>
     </Highlight>
