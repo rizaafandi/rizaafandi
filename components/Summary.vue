@@ -1,8 +1,5 @@
 <template>
-  <div class="flex flex-col gap-5 w-full lg:min-h-0 min-h-screen">
-    <Highlight>
-      <h1 class="text-3xl lg:text-4xl font-bold">Summary</h1>
-    </Highlight>
+  <div class="flex flex-col gap-5 w-full">
     <p class="text-gray dark:text-gray-400 text-lg">
       I'm a Full-stack Developer with proven track record of designing and
       implementing innovative web applications that seamlessly integrate

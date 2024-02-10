@@ -1,7 +1,7 @@
 {
-  "year": "03-2023 - 11-2023",
+  "year": "11-2023 - Present",
   "job": ".NET Developer",
-  "company": "Galva Galindra Multi Cipta",
+  "company": "Adaro Energy Indonesian Tbk",
   "tags": [
     {
       "name": "ASP.NET",
@@ -16,11 +16,8 @@
       "name": "Ms. SQL Server",
       "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
     },
-    {
-      "name": "Bootstrap",
-      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
-    },
-    { "name": "Dev Express", "link": "https://www.devexpress.com/" }
+
+    { "name": "Ms. Azure", "link": "https://azure.microsoft.com/" }
   ],
   "link": "http://gtc.co.id/"
 }

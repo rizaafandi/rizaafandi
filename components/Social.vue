@@ -14,7 +14,7 @@
       v-model="isModalOpen"
       prevent-close
       :ui="{
-        base: '!w-screen',
+        base: 'w-screen',
       }"
     >
       <UCard>
