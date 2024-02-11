@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col lg:gap-24 gap-10 min-h-screen snap-y lg:w-[40%] w-[90%] lg:py-24"
+    class="flex flex-col lg:gap-24 gap-10 min-h-screen snap-y lg:w-[50%] w-[90%] lg:py-24"
   >
     <!-- header -->
     <div

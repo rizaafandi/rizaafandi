@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:w-[40%] w-[90%] fixed top-3 flex justify-end p-3">
+  <div class="lg:w-[50%] w-[90%] fixed top-3 flex justify-end p-3">
     <ClientOnly>
       <UToggle
         v-model="isDark"

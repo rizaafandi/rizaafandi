@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:w-[40%] w-[90%] fixed bottom-10 hidden justify-end transition-opacity"
+    class="lg:w-[50%] w-[90%] fixed bottom-10 hidden justify-end transition-opacity"
     ref="scrollToTop"
     @click="scrollTop"
   >
