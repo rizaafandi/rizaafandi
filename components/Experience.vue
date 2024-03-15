@@ -1,7 +1,8 @@
 <template>
-  <div class="flex flex-col gap-5 lg:min-h-0 min-h-screen">
+  <div class="flex flex-col gap-5">
     <Highlight>
       <h1 class="text-3xl lg:text-4xl font-bold">Experiences</h1>
+      <hr class="my-5 lg:hidden" />
     </Highlight>
     <div
       v-for="data in props.data"

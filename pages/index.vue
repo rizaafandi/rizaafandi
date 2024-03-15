@@ -6,7 +6,11 @@
     <div
       class="snap-center flex flex-col lg:justify-between justify-center gap-10 lg:gap-4 lg:min-h-0 min-h-screen"
     >
-      <Heading />
+      <Heading
+        greeting="Hello👋🏻"
+        text="Self-taught, dedicated Full-stack Developer"
+        title="Riza Afandi"
+      />
       <Summary />
       <div class="flex flex-row gap-4 items-center relative">
         <ReachMe />
@@ -29,7 +33,7 @@
       v-if="!eduPending"
     />
 
-    <div class="flex flex-row justify-center items-center gap-1 my-10">
+    <div class="flex flex-row justify-center items-center gap-1">
       <span class="capitalize text-center">
         @{{ new Date().getFullYear() }} - made with
       </span>
@@ -41,19 +45,6 @@
 import { type propType as contactType } from "~/components/Social.vue";
 import { type propType as experienceType } from "~/components/Experience.vue";
 import { type propType as educationType } from "~/components/Education.vue";
-useHead({
-  title: "Riza Afandi",
-  meta: [
-    {
-      name: "description",
-      content: "My Personal Website",
-    },
-    {
-      name: "author",
-      content: "Riza Afandi",
-    },
-  ],
-});
 const { data: contact, pending: contactPending } = await useAsyncData(
   "contact",
   () => queryContent("/contacts").find()
