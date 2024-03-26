@@ -6,7 +6,7 @@
       :icon="c.icon"
       variant="ghost"
       color="gray"
-      size="lg"
+      size="xl"
     />
   </div>
 </template>

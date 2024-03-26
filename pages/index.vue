@@ -35,7 +35,7 @@
 
     <div class="flex flex-row justify-center items-center gap-1">
       <span class="capitalize text-center">
-        @{{ new Date().getFullYear() }} - made with
+        &copy;{{ new Date().getFullYear() }} - made with
       </span>
       <UIcon name="i-mdi-heart" class="text-red-500 text-xl" />
     </div>
