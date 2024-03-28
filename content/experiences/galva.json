@@ -9,10 +9,6 @@
     },
     { "name": "Vue.js", "link": "https://vuejs.org/" },
     {
-      "name": "JavaScript",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
       "name": "Ms. SQL Server",
       "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
     },

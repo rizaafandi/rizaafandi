@@ -1,20 +1,25 @@
 <template>
-  <div
-    class="flex flex-col lg:gap-24 gap-10 min-h-screen snap-y lg:w-[50%] w-[90%] lg:py-24"
-  >
-    <div class="mt-20 relative">
+  <NuxtLayout>
+    <div class="flex flex-col">
       <ClientOnly>
-        <vue-pdf-embed
-          :source="(data?.link as string)"
-          class="absolute w-full -z-10"
-        />
+        <div class="flex justify-center">
+          <iframe
+            :src="(data?.link as string)+'#toolbar=0'"
+            class="w-2/4 h-screen"
+          >
+            <a :href="(data?.link as string)+'#toolbar=0'">Download the PDF</a>
+          </iframe>
+        </div>
       </ClientOnly>
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 const { data } = await useAsyncData("contact", () =>
   queryContent("/contacts").where({ type: "cv" }).findOne()
 );
+definePageMeta({
+  layout: false,
+});
 </script>

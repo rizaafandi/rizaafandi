@@ -14,6 +14,7 @@
       "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2022"
     },
     { "name": "MySQL", "link": "https://www.mysql.com/" },
+    { "name": "PostgreSQL", "link": "https://www.postgresql.org/" },
     { "name": "Tailwind", "link": "https://tailwindcss.com/" },
     {
       "name": "Bootstrap",

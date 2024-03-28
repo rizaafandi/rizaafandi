@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col lg:gap-24 gap-10 min-h-screen snap-y lg:w-[50%] w-[90%] lg:py-24"
+    class="flex flex-col lg:gap-24 gap-10 min-h-screen snap-y lg:w-[50%] w-[90%] lg:py-24 py-10"
   >
     <!-- header -->
     <div
@@ -8,7 +8,7 @@
     >
       <Heading
         greeting="Hello👋🏻"
-        text="Self-taught, dedicated Full-stack Developer"
+        text="Self-taught, dedicated Software Engineer"
         title="Riza Afandi"
       />
       <Summary />
@@ -29,11 +29,12 @@
 
     <!-- education -->
     <Education
+      class="mt-10 lg:mt-0"
       :data="(education as unknown as educationType[])"
       v-if="!eduPending"
     />
 
-    <div class="flex flex-row justify-center items-center gap-1">
+    <div class="flex flex-row justify-center items-center gap-1 mt-20">
       <span class="capitalize text-center">
         &copy;{{ new Date().getFullYear() }} - made with
       </span>
