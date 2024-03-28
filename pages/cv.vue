@@ -3,12 +3,13 @@
     <div class="flex flex-col">
       <ClientOnly>
         <div class="flex justify-center">
-          <iframe
-            :src="(data?.link as string)+'#toolbar=0'"
+          <object
+            type="application/pdf"
+            :data="(data?.link as string)+'#toolbar=0'"
             class="w-screen h-screen"
           >
             <a :href="(data?.link as string)+'#toolbar=0'">Download the PDF</a>
-          </iframe>
+          </object>
         </div>
       </ClientOnly>
     </div>

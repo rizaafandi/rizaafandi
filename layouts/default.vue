@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen flex flex-col justify-center items-center"
+    class="min-h-screen flex flex-col justify-center items-center bg-gray-50 lg:px-[23%]"
     id="default-layout"
   >
     <Scrollbar />
@@ -12,22 +12,3 @@
     <ScrollToTop />
   </div>
 </template>
-
-<script setup lang="ts">
-useHead({
-  bodyAttrs: {
-    class: "bg-white dark:bg-gray-950 text-gray-500 dark:text-gray-300 ",
-  },
-  title: "Riza Afandi",
-  meta: [
-    {
-      name: "description",
-      content: "My Personal Website",
-    },
-    {
-      name: "author",
-      content: "Riza Afandi",
-    },
-  ],
-});
-</script>
