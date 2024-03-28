@@ -5,7 +5,7 @@
         <div class="flex justify-center">
           <iframe
             :src="(data?.link as string)+'#toolbar=0'"
-            class="w-2/4 h-screen"
+            class="w-screen h-screen"
           >
             <a :href="(data?.link as string)+'#toolbar=0'">Download the PDF</a>
           </iframe>
